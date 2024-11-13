@@ -1,8 +1,9 @@
 :root {
     --white: #ffffff;
+    --off-white: #F3F9F9;
     --contrast: #3D4547;
-    --primary: #73BDB8;
-    --secondary: #4DA8BF;
+    --primary: #4DA8BF;
+    --secondary: #73BDB8;
     --body-font: "DM Sans", sans-serif;
 }
 img {
@@ -31,4 +32,98 @@ h1 {
     font-size: 64px;
     line-height: 1.06;
     font-weight: 600;
+}
+h2 {
+    font-size: 45px;
+    line-height: 1.15;
+    font-weight: 600;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.13;
+    margin-bottom: 0;
+}
+P:last-child {
+    margin-bottom: 0;
+}
+.container {
+    max-width: 1380px;
+    padding: 0 24px;
+}
+.primary-transparent {
+    padding: 10px 22px;
+    color: var(--primary);
+    font-weight: 600;
+    background-color: #F1FAFD;
+    border: 2px solid var(--primary);
+    border-radius: 48px;
+}
+.primary-transparent:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.transparent-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--off-white);
+}
+.transparent-arrow img {
+    max-width: 13px;
+}
+.transparent-arrow:hover {
+    color: var(--primary);
+}
+
+
+/* Header Style */
+.site-header {
+    padding: 24px 0;
+    background-color: var(--white);
+}
+nav.navmenu {
+    width: 100%;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+nav.navmenu ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+nav.navmenu ul li a {
+    padding: 2px;
+    color: var(--contrast);
+}
+nav.navmenu ul li a:hover {
+    color: var(--primary);
+}
+
+/* Footer Style */
+.site-footer {
+    padding: 48px 0;
+    background-color: var(--contrast);
+    color: var(--off-white);
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.site-footer h3 {
+    color: var(--primary);
+}
+.footer-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.footer-buttons a {
+    color: var(--off-white);
+}
+.footer-buttons a:hover {
+    color: var(--primary);
 }
