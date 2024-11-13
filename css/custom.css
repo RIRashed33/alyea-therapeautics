@@ -4,6 +4,7 @@
     --contrast: #3D4547;
     --primary: #4DA8BF;
     --secondary: #73BDB8;
+    --tertiary: #BADEED;
     --body-font: "DM Sans", sans-serif;
 }
 img {
@@ -44,6 +45,13 @@ h3 {
     line-height: 1.13;
     margin-bottom: 0;
 }
+:is(h1, h2) span {
+    color: var(--primary);
+}
+p.large {
+    font-size: 22px;
+    line-height: 1.25;
+}
 P:last-child {
     margin-bottom: 0;
 }
@@ -75,7 +83,13 @@ P:last-child {
 .transparent-arrow:hover {
     color: var(--primary);
 }
-
+ul.list-circle-checkmark li {
+    padding-left: 32px;
+    background-image: url(../img/icons/checkmark-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left 2px top 2px;
+}
 
 /* Header Style */
 .site-header {
@@ -126,4 +140,64 @@ nav.navmenu ul li a:hover {
 }
 .footer-buttons a:hover {
     color: var(--primary);
+}
+
+/* Another Section Style */
+.about-section {
+    padding: 72px 0;
+}
+.about-section h2 {
+    margin-bottom: 72px;
+}
+.full-height-about-box {
+    padding: 32px;
+    background-color: var(--off-white);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 100%;
+}
+.full-height-about-box img {
+    margin-top: auto;
+}
+.single-about-box {
+    padding: 32px;
+    border: 1px solid #DCE4E5;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    min-height: 100%;
+}
+.single-about-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.full-width-about-box {
+    padding: 16px;
+    background-color: var(--off-white);
+    border-radius: 32px;
+}
+.single-about-inner-box {
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100%;
+}
+.read-article {
+    color: var(--primary);
+}
+.tertiary-with-bg {
+    background-color: var(--tertiary);
+    background-image: url(../img/hand-with-jar.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
