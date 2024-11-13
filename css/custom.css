@@ -1,0 +1,34 @@
+:root {
+    --white: #ffffff;
+    --contrast: #3D4547;
+    --primary: #73BDB8;
+    --secondary: #4DA8BF;
+    --body-font: "DM Sans", sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a, button {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.33s;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: var(--body-font);
+    color: var(--contrast);
+    background-color: var(--white);
+}
+h1 {
+    font-size: 64px;
+    line-height: 1.06;
+    font-weight: 600;
+}
